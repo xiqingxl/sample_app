@@ -1,0 +1,6 @@
+<% @user.each do |users| %> 
+<table>
+<th><td><%= users.name %></td></th>
+<th><td><%= users.email %></td></th>
+</table>
+<% end %>
