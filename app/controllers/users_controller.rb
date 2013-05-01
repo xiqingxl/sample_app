@@ -8,6 +8,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
   
+  def edit 
+    @user = User.find(params[:id])
+  
+  end
   def create
     @user = User.new(params[:user])
     if @user.save
@@ -21,5 +25,6 @@ class UsersController < ApplicationController
    
   def show
     @user = User.find(params[:id])
+    @test = User.find_by_remember_token(cookies[:remember_token])
   end
 end
