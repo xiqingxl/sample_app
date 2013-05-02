@@ -1,0 +1,9 @@
+--- 
+open_files: 
+  - app/views/users/edit.html.erb
+  - app/views/layouts/_header.html.erb
+  - app/views/layouts/application.erb
+  - app/controllers/application_controller.rb
+  - app/controllers/users_controller.rb
+  - app/controllers/sessions_controller.rb
+  - app/helpers/sessions_helper.rb

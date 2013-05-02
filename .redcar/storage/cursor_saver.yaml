@@ -1,0 +1,32 @@
+--- 
+cursor_positions: 
+  - :path: app/views/sessions/new.html.erb
+    :cursor_offset: 436
+    :timestamp: 2013-05-01 19:00:58 +08:00
+  - :path: config/routes.rb
+    :cursor_offset: 179
+    :timestamp: 2013-05-01 22:43:04 +08:00
+  - :path: app/views/users/edit.html.erb
+    :cursor_offset: 347
+    :timestamp: 2013-05-02 06:22:48 +08:00
+  - :path: app/views/layouts/_header.html.erb
+    :cursor_offset: 613
+    :timestamp: 2013-05-01 22:43:04 +08:00
+  - :path: app/views/layouts/application.erb
+    :cursor_offset: 521
+    :timestamp: 2013-04-28 22:11:23 +08:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2013-05-01 14:18:01 +08:00
+  - :path: app/controllers/users_controller.rb
+    :cursor_offset: 178
+    :timestamp: 2013-05-01 22:43:04 +08:00
+  - :path: app/controllers/sessions_controller.rb
+    :cursor_offset: 249
+    :timestamp: 2013-05-02 06:33:30 +08:00
+  - :path: app/helpers/sessions_helper.rb
+    :cursor_offset: 102
+    :timestamp: 2013-05-01 22:43:04 +08:00
+    :selection_offset: 83
+    :block_selection_mode: false
+files_to_retain: 0

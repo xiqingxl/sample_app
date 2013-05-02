@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-
+  before_filter :signed_in_user, only: [:edit, :update]
+  before_filter :currect_user, only:[:edit, :update]
   def index
     @user = User.all   
   end
@@ -22,9 +23,32 @@ class UsersController < ApplicationController
      render 'new'
     end
   end   
-   
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user])
+      flash[:success] = "Success update"
+      sign_in(@user)
+      redirect_to @user
+    else
+      render 'edit'
+    end
+
+  end
+
+
   def show
     @user = User.find(params[:id])
-    @test = User.find_by_remember_token(cookies[:remember_token])
+  end
+
+  private
+
+  def signed_in_user
+    redirect_to signin_path, notice: "Please sign in." unless signed_in?
+  end
+
+  def currect_user
+    @user = User.find(params[:id])
+    redirect_to(root_path) unless cc_user?(@user)
   end
 end

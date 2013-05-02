@@ -13,7 +13,11 @@ module SessionsHelper
 
  def c_user
     @c_user ||= User.find_by_remember_token(cookies[:remember_token])
-  end
+ end
+
+ def cc_user?(user)
+   user == c_user
+ end
  def sign_out
    self.c_user = nil
    cookies.delete(:remember_token)  
